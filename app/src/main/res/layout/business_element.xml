@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_weight="0.5"
+        android:id="@+id/element"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_148sdp"
+            android:orientation="vertical"
+            android:background="@drawable/business_img_bg">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:gravity="center"
+                android:id="@+id/icons"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/color_mono"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-80dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="0"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:background="@drawable/pending_counter_background"
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/count_pending"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:visibility="gone"
+                    android:lineHeight="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/business_element_text_back">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/payment_method"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/names"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:lineHeight="1dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

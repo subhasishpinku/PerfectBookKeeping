@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="picSelection">#76A9FF</color>
+    <color name="blue">#098CFF</color>
+    <color name="loginBtn">#85C05F</color>
+    <color name="backgroundCard">#EEEEEE</color>
+    <color name="grey">#9B9B9B</color>
+    <color name="text">#54697B</color>
+    <color name="red">#FF0000</color>
+    <color name="btnText">#FFFFFF</color>
+
+    <color name="cs_textcolor">#fff</color>
+
+    <color name="lightBlue">#a1dda2</color>
+    <color name="darkGreen">#2d4d63</color>
+    <color name="compHeading">#FF508968</color>
+    <color name="profileHead">#78C448</color>
+    <color name="profileRowBack">#F9F9F9</color>
+    <color name="iconColor">#6eba3d</color>
+    <color name="placeHolder">#dddddd</color>
+    <color name="cam_text">#6d6d6d</color>
+
+    <!--CARD COLOR-->
+    <color name="green_continue">#1fc055</color>
+    <color name="chip_color">#d4edfa</color>
+    <color name="chip_inner_color">#e0e4e4</color>
+    <color name="chip_yellow_color">#fbe191</color>
+    <color name="chip_yellow_inner_color">#eed280</color>
+
+    <color name="purple_color">#5515a9</color>
+    <color name="purple_color_gradient">#651dc4</color>
+
+    <color name="green_color">#108b4c</color>
+    <color name="green_color_gradient">#1caf57</color>
+
+    <color name="blue_color">#5D8BF2</color>
+    <color name="blue_color_gradient">#3545AE</color>
+
+    <color name="pink_color">#d04c84</color>
+    <color name="pink_color_gradient">#d04882</color>
+
+    <color name="default_color">#363434</color>
+    <color name="default_color_gradient">#434141</color>
+
+    <color name="brown_color">#800000</color>
+    <color name="brown_color_gradient">#A52A2A</color>
+    <!--CARD COLOR-->
+
+    <!--PACKAGE COLOR-->
+    <color name="bronze_border">#D49B45</color>
+    <color name="silver_border">#BABABA</color>
+    <color name="gold_border">#F3A531</color>
+    <color name="rip_heading">#f1f1f1</color>
+    <color name="pending">#8C8C8C</color>
+    <color name="reject">#AD1457</color>
+    <color name="super_approve">#00ACC1</color>
+    <color name="approve">#26FFA9</color>
+
+</resources>

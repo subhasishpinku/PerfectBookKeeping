@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "711337132092",
+    "project_id": "perfectbookkeeping-43ed5",
+    "storage_bucket": "perfectbookkeeping-43ed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711337132092:android:57b9f43c8a808ef8864339",
+        "android_client_info": {
+          "package_name": "perfect.book.keeping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711337132092-lelie69puedvsghhabo4ogko9ghn73gt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "perfect.book.keeping",
+            "certificate_hash": "e4d621ae551bf7419cf77c805a76210b6e6aa2a9"
+          }
+        },
+        {
+          "client_id": "711337132092-03dv4n9g3j8eqo8q04sc4f7he7rdjjd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaNpdaPmhRRB-3uFzn2v8-7rmpEolkN-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711337132092-03dv4n9g3j8eqo8q04sc4f7he7rdjjd4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

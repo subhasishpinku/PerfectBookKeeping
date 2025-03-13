@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/perfect_theme_bg"
+    tools:context=".activity.company.AddCompany">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:id="@+id/sectionScroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_layout">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectedPackage">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="@dimen/_50sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/mainView">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="@dimen/_12sdp"
+                                android:id="@+id/package_selection">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="BRONZE"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:id="@+id/package_item_name"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/poppins_semi_bold"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="$250.00 / month"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:id="@+id/package_item_price"
+                                    android:fontFamily="@font/poppins_semi_bold"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DESCRIPTION"
+                                    android:textSize="@dimen/_8sdp"
+                                    android:id="@+id/package_item_description"
+                                    android:fontFamily="@font/poppins_semi_bold"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:src="@drawable/silver_sild"
+                        android:id="@+id/shield"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_17sdp"
+                        android:src="@drawable/check"
+                        android:id="@+id/selected"/>
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/selectedPackage">
+                <!--COMPANY INFO-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/company_block"
+                    android:id="@+id/company_block">
+                    <LinearLayout
+                        android:id="@+id/companyImage_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:elevation="5dp">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/company_image"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_100sdp"
+                                android:background="@drawable/company_image_border"
+                                android:src="@drawable/company"/>
+
+
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="bottom|right"
+                                android:background="@drawable/image_oval"
+                                android:elevation="@dimen/_2sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/ivPlayOverlay"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/baseline_camera" />
+
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <!--COMPANY INFO HEADING-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/companyImage_layout"
+                        android:id="@+id/company_info">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/company_info"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textStyle="bold"
+                            android:textColor="@color/compHeading"/>
+
+
+                    </LinearLayout>
+                    <!--COMPANY INFO HEADING-->
+                    <!--COMPANY INFO FORM-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/company_info_fields"
+                        android:layout_below="@+id/company_info"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/company_name"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/poppins_bold"
+                            android:id="@+id/name_label"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:id="@+id/comp_name"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:layout_margin="0dp"
+                            android:padding="6dp"
+                            android:layout_below="@+id/name_label"
+                            android:backgroundTint="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:drawableEnd="@drawable/baseline_mode_edit"
+                            android:drawablePadding="12dp"
+                            android:ems="10"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:hint="@string/company_name"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/company_ein_number"
+                            android:layout_below="@+id/comp_name"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/poppins_bold"
+                            android:id="@+id/email_label"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:id="@+id/registration_no"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/email_label"
+                            android:backgroundTint="@color/black"
+                            android:layout_height="50dp"
+                            android:layout_margin="0dp"
+                            android:padding="6dp"
+                            android:drawableEnd="@drawable/baseline_mode_edit"
+                            android:drawablePadding="12dp"
+                            android:ems="10"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="@string/company_gov_id"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/registration_no"
+                            android:id="@+id/checkView">
+
+                            <CheckBox
+                                android:id="@+id/check_govt"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:background="@drawable/check_uncheck"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:layout_alignParentRight="true"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:id="@+id/govt_Id"
+                                android:layout_height="wrap_content"
+                                android:text="@string/govLabel"
+                                android:layout_weight="0.8"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                android:paddingLeft="@dimen/_10sdp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/watermark_date_format"
+                                    android:layout_below="@+id/registration_no"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:id="@+id/date_format_label"
+                                    android:textColor="@color/black"/>
+                                <EditText
+                                    android:id="@+id/date_format"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_below="@+id/date_format_label"
+                                    android:layout_height="50dp"
+                                    android:drawableEnd="@drawable/down_arrow"
+                                    android:drawablePadding="12dp"
+                                    android:backgroundTint="@color/black"
+                                    android:ems="10"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:hint="@string/select_date_format"
+                                    android:text="@string/date_format"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/operational_currency"
+                                    android:layout_below="@+id/registration_no"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:id="@+id/currency_label"
+                                    android:textColor="@color/black"/>
+                                <EditText
+                                    android:id="@+id/choose_currency"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_below="@+id/date_format_label"
+                                    android:layout_height="50dp"
+                                    android:drawableEnd="@drawable/down_arrow"
+                                    android:drawablePadding="12dp"
+                                    android:backgroundTint="@color/black"
+                                    android:text="@string/currency"
+                                    android:ems="10"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:hint="Choose Currency"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--COMPANY INFO FORM-->
+                </RelativeLayout>
+                <!--COMPANY ADDRESS INFO-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/company_block"
+                    android:id="@+id/company_address_block"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/company_block">
+                    <!--COMPANY ADDRESS HEADING-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_55sdp"
+                        android:id="@+id/company_address"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/company_address"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/compHeading"/>
+                        <RelativeLayout
+                            android:id="@+id/choose_company_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_below="@id/company_address"
+                            android:gravity="right"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:id="@+id/add_choose_address">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_47sdp"
+                                    android:layout_gravity="left"
+                                    android:background="@drawable/choose_button"
+                                    android:gravity="left">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/add_or_Choose_address"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left"
+                                        android:textColor="@color/black" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/_45sdp"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:background="@drawable/image_oval"
+                                    android:elevation="@dimen/_2sdp"
+                                    android:layout_gravity="right"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/_40sdp"
+                                        android:layout_height="@dimen/_40sdp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@drawable/super_approve_dot"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:src="@drawable/address"
+                                            android:paddingTop="@dimen/_3sdp"/>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                            </FrameLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!--COMPANY ADDRESS HEADING-->
+                    <!--COMPANY ADDRESS SELECTED-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/company_address"
+                        android:id="@+id/company_address_filed"
+                        android:orientation="vertical">
+                        <!--ADDRESS LINE 1-->
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/address_1"
+                            android:visibility="gone"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:hint="@string/address_1"
+                            android:backgroundTint="@color/black"
+                            android:layout_margin="0dp"
+                            android:padding="6dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:id="@+id/addressOne"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14dp"/>
+                        <!--ADDRESS LINE 1-->
+                        <!--ADDRESS LINE 2-->
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/address_line_1"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:hint="@string/enter_address_line_2"
+                            android:backgroundTint="@color/black"
+                            android:id="@+id/addressTwo"
+                            android:layout_margin="0dp"
+                            android:padding="6dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14dp"/>
+                        <!--ADDRESS LINE 2-->
+                        <!--COUNTRY STATE BLOCK-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.55"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/country_region"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="12dp"
+                                    android:visibility="gone"
+                                    android:textColor="@color/black"/>
+
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/country"
+                                    android:focusable="false"
+                                    android:backgroundTint="@color/black"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:completionThreshold="1"
+                                    android:id="@+id/countrySelect"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:drawableEnd="@drawable/down_arrow"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/state"
+                                    android:textSize="12dp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textColor="@color/black"/>
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/state"
+                                    android:id="@+id/state"
+                                    android:backgroundTint="@color/black"
+                                    android:layout_margin="0dp"
+                                    android:inputType="textEmailAddress"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"/>
+
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/state"
+                                    android:focusable="false"
+                                    android:completionThreshold="1"
+                                    android:backgroundTint="@color/black"
+                                    android:id="@+id/stateSelect"
+                                    android:visibility="gone"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:drawableEnd="@drawable/down_arrow"
+                                    android:textColor="@color/black"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="14dp"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <!--COUNTRY STATE BLOCK-->
+                        <!--CITY ZIP BLOCK-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/city"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="12dp"
+                                    android:visibility="gone"
+                                    android:textColor="@color/black"/>
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/city"
+                                    android:layout_margin="0dp"
+                                    android:backgroundTint="@color/black"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:inputType="textEmailAddress"
+                                    android:id="@+id/city"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.95"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/zip"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/black"/>
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/zip_code"
+                                    android:inputType="number"
+                                    android:backgroundTint="@color/black"
+                                    android:id="@+id/zip"
+                                    android:maxLength="6"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--CITY ZIP BLOCK-->
+                    </LinearLayout>
+                    <!--COMPANY ADDRESS SELECTED-->
+                </RelativeLayout>
+                <!--COMPANY BILLING ADDRESS INFO-->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/company_block"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/company_billing_address_main"
+                    android:layout_below="@+id/company_address_block">
+                    <!--COMPANY BILLING ADDRESS HEADING-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:id="@+id/company_billing_address">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/billing_address"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/compHeading"/>
+                    </LinearLayout>
+                    <!--COMPANY BILLING ADDRESS HEADING-->
+                    <!--COMPANY BILLING ADDRESS FROM-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/company_billing_address"
+                        android:id="@+id/sameCheckView">
+
+                        <CheckBox
+                            android:id="@+id/check_same"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/check_uncheck"
+                            android:layout_gravity="center_vertical"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sameAddress"
+                            android:layout_weight="0.8"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="@dimen/_10sdp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sameCheckView"
+                        android:id="@+id/company_billing_address_filed"
+                        android:orientation="vertical">
+                        <!--ADDRESS LINE 1-->
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/address_1"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:hint="@string/address_1"
+                            android:backgroundTint="@color/black"
+                            android:layout_margin="0dp"
+                            android:padding="6dp"
+                            android:inputType="textEmailAddress"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:id="@+id/billingAddressOne"
+                            android:textSize="14dp"/>
+                        <!--ADDRESS LINE 1-->
+                        <!--ADDRESS LINE 2-->
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/address_2"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:hint="Address line 2"
+                            android:backgroundTint="@color/black"
+                            android:id="@+id/billingAddressTwo"
+                            android:layout_margin="0dp"
+                            android:padding="6dp"
+                            android:inputType="textEmailAddress"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+                        <!--ADDRESS LINE 2-->
+                        <!--COUNTRY STATE BLOCK-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.55"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/country_region"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/black"/>
+
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/country"
+                                    android:focusable="false"
+                                    android:backgroundTint="@color/black"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:completionThreshold="1"
+                                    android:id="@+id/billingCountrySelect"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:drawableEnd="@drawable/down_arrow"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/state"
+                                    android:textSize="12dp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textColor="@color/black"/>
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/state"
+                                    android:id="@+id/billingState"
+                                    android:backgroundTint="@color/black"
+                                    android:inputType="textEmailAddress"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"/>
+
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/state"
+                                    android:focusable="false"
+                                    android:completionThreshold="1"
+                                    android:id="@+id/billingStateSelect"
+                                    android:visibility="gone"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:drawableEnd="@drawable/down_arrow"
+                                    android:textColor="@color/black"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="14dp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--COUNTRY STATE BLOCK-->
+                        <!--CITY ZIP BLOCK-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/city"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/black"/>
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/city"
+                                    android:layout_margin="0dp"
+                                    android:inputType="textEmailAddress"
+                                    android:padding="6dp"
+                                    android:backgroundTint="@color/black"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/billingCity"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.95"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/zip"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/black"/>
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/zip_code"
+                                    android:inputType="number"
+                                    android:id="@+id/billingZip"
+                                    android:maxLength="6"
+                                    android:layout_margin="0dp"
+                                    android:backgroundTint="@color/black"
+                                    android:padding="6dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--CITY ZIP BLOCK-->
+                    </LinearLayout>
+                    <!--COMPANY BILLING ADDRESS FROM-->
+                </RelativeLayout>
+                <!--COMPANY CARD INFO-->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/company_block"
+                    android:id="@+id/company_card_block"
+                    android:layout_below="@+id/company_billing_address_main"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <!--COMPANY CARD HEADING-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:id="@+id/company_cards">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/card_details"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/compHeading"/>
+
+                        <LinearLayout
+                            android:id="@+id/choose_company_cards"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_below="@id/company_address"
+                            android:gravity="right"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:id="@+id/chooseCard">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/_45sdp"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:background="@drawable/image_oval"
+                                    android:elevation="@dimen/_2sdp"
+                                    android:layout_gravity="right"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/_40sdp"
+                                        android:layout_height="@dimen/_40sdp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@drawable/green_dot"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/credit_card"
+                                            android:paddingTop="@dimen/_3sdp"/>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_47sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/choose_button"
+                                    android:gravity="left">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/add_or_Choose_cards"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left"
+                                        android:textColor="@color/black" />
+
+
+                                </LinearLayout>
+
+
+                            </FrameLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--COMPANY CARD HEADING-->
+                    <!--COMPANY CARD SECTION-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/company_cards">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/viewCard">
+
+                            <!--CARD DESIGN-->
+                            <FrameLayout
+                                android:id="@+id/card_container"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="@dimen/_330sdp"
+                                    android:layout_height="@dimen/_180sdp"
+                                    app:cardCornerRadius="@dimen/_10sdp"
+                                    android:id="@+id/back_design"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/_330sdp"
+                                        android:layout_height="@dimen/_180sdp"
+                                        android:background="@color/purple_color"
+                                        android:id="@+id/back_container_bg">
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/_330sdp"
+                                            android:layout_height="@dimen/_180sdp"
+                                            android:orientation="horizontal">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_10sdp"
+                                                android:layout_weight="1.8"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="@dimen/_300sdp"
+                                                        android:layout_height="@dimen/_20sdp"
+                                                        android:src="#222222"/>
+
+                                                </LinearLayout>
+
+                                                <FrameLayout
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/imageView1"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:src="@drawable/sign_strip" />
+
+                                                    <TextView
+                                                        android:id="@+id/cvv_number"
+                                                        android:layout_width="@dimen/_65sdp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|center"
+                                                        android:fontFamily="@font/poppins_regular"
+                                                        android:padding="@dimen/_15sdp"
+                                                        android:text="000"
+                                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                                        android:textSize="@dimen/_16sdp"
+                                                        android:textStyle="italic" />
+
+                                                </FrameLayout>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="@dimen/_330sdp"
+                                    android:layout_height="@dimen/_190sdp"
+                                    app:cardCornerRadius="@dimen/_10sdp"
+                                    android:id="@+id/design"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/purple_color"
+                                        android:id="@+id/list_container_bg">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:id="@+id/first"
+                                                android:orientation="horizontal">
+
+
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="bottom"
+                                                    android:paddingLeft="@dimen/_10sdp"
+                                                    android:gravity="center_vertical"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="@font/poppins_regular"
+                                                    android:text="@string/credit_debit_card"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="@dimen/_18sdp"
+                                                    android:textStyle="bold" />
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:id="@+id/chip_card"
+                                                    android:layout_width="0dp"
+                                                    android:layout_weight="0.2"
+                                                    android:layout_height="@dimen/_45sdp"
+                                                    android:layout_marginLeft="@dimen/_10sdp"
+                                                    android:src="@drawable/chip" />
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:gravity="right"
+                                                    android:layout_weight="0.6"
+                                                    android:layout_marginRight="@dimen/_20sdp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:fontFamily="@font/poppins_regular"
+                                                        android:text="@string/payWave"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="@dimen/_10sdp"
+                                                        android:textStyle="bold" />
+
+                                                    <ImageView
+                                                        android:id="@+id/tap_pay"
+                                                        android:layout_width="@dimen/_15sdp"
+                                                        android:layout_height="@dimen/_15sdp"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:src="@drawable/wifi" />
+
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginTop="@dimen/_5sdp"
+                                                android:layout_marginLeft="@dimen/_10sdp">
+
+                                                <TextView
+                                                    android:id="@+id/cardNumber"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/poppins_regular"
+                                                    android:text="XXXX XXXX XXXX 6025"
+                                                    android:letterSpacing="0.1"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="@dimen/_22sdp"
+                                                    android:textStyle="bold" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/_10sdp"
+                                                android:orientation="horizontal">
+
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.7"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="bottom"
+                                                        android:fontFamily="@font/poppins_regular"
+                                                        android:text="@string/card_number"
+                                                        android:textColor="#888888"
+                                                        android:textSize="@dimen/_14sdp"
+                                                        android:textStyle="bold" />
+
+                                                    <TextView
+                                                        android:id="@+id/card_holder_name"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="bottom"
+                                                        android:fontFamily="@font/poppins_regular"
+                                                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                                        android:maxLength="50"
+                                                        android:text="xxxxxxxxxxxxx"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="@dimen/_14sdp"
+                                                        android:textStyle="bold" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.7"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="bottom"
+                                                        android:fontFamily="@font/poppins_regular"
+                                                        android:text="@string/valid_thru"
+                                                        android:textColor="#888888"
+                                                        android:textSize="@dimen/_14sdp"
+                                                        android:textStyle="bold" />
+
+                                                    <TextView
+                                                        android:id="@+id/expiry_date"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="@dimen/_10sdp"
+                                                        android:gravity="center_vertical"
+                                                        android:fontFamily="@font/poppins_regular"
+                                                        android:text="xxxxxxxxxx"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="@dimen/_14sdp"
+                                                        android:textStyle="bold" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.4"
+                                                    android:layout_gravity="right"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <ImageView
+                                                        android:id="@+id/card_type"
+                                                        android:layout_width="@dimen/_50sdp"
+                                                        android:layout_height="@dimen/_30sdp"
+                                                        android:src="@drawable/logo_generic" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </FrameLayout>
+                            <!--CARD FORM-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/design"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/card_holder_name"
+                                    android:paddingLeft="25dp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"/>
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/card_holder_name"
+                                    android:backgroundTint="@color/black"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:inputType="textEmailAddress"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/cardHolderName"
+                                    android:textSize="14dp"/>
+
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/valid_thru"
+                                    android:paddingLeft="25dp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"/>
+
+                                <EditText
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:hint="@string/card_number"
+                                    android:backgroundTint="@color/black"
+                                    android:layout_margin="0dp"
+                                    android:padding="6dp"
+                                    android:inputType="textEmailAddress"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/card_number"
+                                    android:digits="01234 56789 X"
+                                    android:maxLength="19"
+                                    android:textSize="14dp"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="wrap_content"
+                                            android:text="@string/exp_date"
+                                            android:paddingLeft="25dp"
+                                            android:visibility="gone"
+                                            android:textSize="14dp"
+                                            android:fontFamily="@font/poppins_regular"
+                                            android:textColor="@color/black"/>
+
+
+                                        <EditText
+                                            android:textCursorDrawable="@drawable/color_cursor"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:hint="@string/mm_yy"
+                                            android:id="@+id/expiry"
+                                            android:backgroundTint="@color/black"
+                                            android:inputType="phone"
+                                            android:padding="6dp"
+                                            android:maxLength="5"
+                                            android:textColorHint="@color/black"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/poppins_regular"
+                                            android:digits="0123456789- "
+                                            android:textSize="14dp"/>
+
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="wrap_content"
+                                            android:text="@string/cvv"
+                                            android:paddingLeft="25dp"
+                                            android:textSize="14dp"
+                                            android:visibility="gone"
+                                            android:fontFamily="@font/poppins_regular"
+                                            android:textColor="@color/black"/>
+
+                                        <EditText
+                                            android:textCursorDrawable="@drawable/color_cursor"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:hint="@string/cvv"
+                                            android:id="@+id/cvv"
+                                            android:inputType="numberPassword"
+                                            android:fontFamily="@font/poppins_regular"
+                                            android:textColorHint="@color/black"
+                                            android:textColor="@color/black"
+                                            android:padding="6dp"
+                                            android:backgroundTint="@color/black"
+                                            android:maxLength="3"
+                                            android:digits="0123456789- "
+                                            android:textSize="14dp"/>
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <!--COMPANY CARD SECTION-->
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/add_company"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gradiant_button_background"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textColor="@color/btnText"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/heading_alt"
+            android:background="@drawable/gradiant_btn_alt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/back">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/back_arrow"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_gravity="center_vertical"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/user_prof"/>
+
+                    <TextView
+                        android:id="@+id/header_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/edtComp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:id="@+id/openMenu"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_75sdp"
+                android:layout_alignParentRight="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/profile_title"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/menu"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drop_tringle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

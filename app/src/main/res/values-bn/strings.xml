@@ -1,0 +1,348 @@
+<resources>
+    <!--    <string name="app_name" translatable="false" >নিখুঁত বুককিপিং</string>-->
+    <string name="email" >আপনার ইমেইল আইডি লিখুন</string>
+    <string name="title" >শিরোনাম</string>
+    <string name="memo" >মেমো</string>
+    <string name="file_date" >ফাইলের তারিখ</string>
+    <string name="amount" >পরিমাণ</string>
+    <string name="email_add" >আপনার ই-মেইল ঠিকানা লেখো</string>
+    <string name="name" >আপনার নাম প্রবেশ করুন</string>
+    <string name="password" >আপনার পাসওয়ার্ড লিখুন</string>
+    <string name="phone" >আপনার ফোন নম্বর লিখুন</string>
+    <string name="oldPassword" >আপনার বর্তমান পাসওয়ার্ডটি প্রবেশ করান</string>
+    <string name="re_password" >আপনার পাসওয়ার্ড পুনরায় লিখুন</string>
+    <string name="forgotPassword" >আপনি কি পাসওয়ার্ড ভুলে গেছেন?</string>
+    <string name="datePicker" >YYYY/MM/DD</string>
+    <string name="currency" >আমেরিকান ডলার</string>
+    <string name="date_format" >MM/DD/YYYY</string>
+    <!--MENU ITEMS-->
+    <string name="companyList" >কোম্পানিগুলো</string>
+    <string name="dashboard" >ড্যাশবোর্ড</string>
+    <string name="gallery" >আপলোড ইতিহাস</string>
+    <string name="all_files" >সমস্ত রসিদ</string>
+    <string name="approve_files" >অনুমোদিত রসিদ</string>
+    <string name="reject_files" >প্রত্যাখ্যাত রসিদ</string>
+    <string name="pending_file" >বকেয়া রসিদ</string>
+    <string name="reject_reason" >প্রত্যাখ্যানের কারণ</string>
+    <string name="profileDetails" >প্রোফাইল বিস্তারিত</string>
+    <string name="crop" >ছাঁটা</string>
+    <string name="cards" >আপনার কার্ড</string>
+    <string name="receipt" >রসিদ</string>
+    <string name="edtComp" >প্রতিষ্ঠানের তথ্য</string>
+    <string name="paymentMethod" >মূল্যপরিশোধ পদ্ধতি</string>
+    <string name="addComp" >কোম্পানি যোগ করুন</string>
+    <string name="profile" >প্রোফাইল</string>
+    <string name="logOut" >প্রস্থান</string>
+    <string name="changePassword" >পাসওয়ার্ড পরিবর্তন করুন</string>
+    <!--Company Dashboard-->
+    <string name="uploadReceipt" >আপলোড রসিদ</string>
+    <string name="viewReceipt" >রসিদ দেখুন</string>
+    <string name="subUsers" >উপব্যবহারকারী</string>
+    <string name="settings" >সেটিংস</string>
+    <string name="menu" >তালিকা</string>
+    <string name="pnl" >লাভ এবং ক্ষতি</string>
+    <string name="employee" >কর্মচারী</string>
+    <string name="checkLabel" >প্রতিদান প্রয়োজন, কোম্পানির অর্থ দিয়ে পরিশোধ করা হয় না।</string>
+    <string name="govLabel" >সরকার আইডি উপব্যবহারকারী কাছে দৃশ্যমান করুন</string>
+    <string name="sameAddress" >একই ঠিকানা</string>
+    <!--DRAWER-->
+    <string name="openDrawer" >ড্রয়ার খুলুন</string>
+    <string name="closeDrawer" >ড্রয়ার বন্ধ করুন</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" >হ্যালো ফাঁকা টুকরা</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Account Page   <-->
+    <string name="register_account" >অ্যাকাউন্ট নিবন্ধন করুন</string>
+    <string name="already_have_an_account" >ইতিমধ্যে অ্যাকাউন্ট আছে?</string>
+    <string name="log_in" > প্রবেশ করুন</string>
+    <!-- Add Company   <-->
+    <string name="company_info" >প্রতিষ্ঠানের তথ্য</string>
+    <string name="company_name" >প্রতিষ্ঠানের নাম</string>
+    <string name="company_ein_number" >প্রতিষ্ঠানের EIN নম্বর</string>
+    <string name="company_gov_id" >কোম্পানির সরকার আইডি</string>
+    <string name="watermark_date_format" >ওয়াটারমার্ক তারিখ বিন্যাস</string>
+    <string name="select_date_format" >তারিখ বিন্যাস নির্বাচন করুন</string>
+    <string name="operational_currency" >ব্যবহার্য মুদ্রা</string>
+    <string name="choose_currency" >মুদ্রা পছন্দ করুন</string>
+    <string name="company_address" >প্রতিস্থান এর ঠিকানা</string>
+    <string name="add_or_Choose_address" >যোগ করুন বা বেছে নিন ঠিকানা</string>
+    <string name="address_1" >যোগ করুন বা বেছে নিন ঠিকানা</string>
+    <string name="address_line_1" >ঠিকানা লাইন 1</string>
+    <string name="address_2" >ঠিকানা ২</string>
+    <string name="address_line_2" >ঠিকানা লাইন ২</string>
+    <string name="country_region" >দেশ অঞ্চল</string>
+    <string name="country" >দেশ</string>
+    <string name="state" >রাজ্য</string>
+    <string name="city" >শহর</string>
+    <string name="zip_code" >পিনকোড</string>
+    <string name="card_details" >কার্ডের বিবরণ</string>
+    <string name="add_or_Choose_cards" >যোগ করুন বা চয়ন করুন \n কার্ড</string>
+    <string name="cvv" >000</string>
+    <string name="payWave" >পে ওয়েভ</string>
+    <string name="card_number" >XXXX XXXX XXXX 6025</string>
+    <string name="cars_holder" >কার্ড হোল্ডার</string>
+    <string name="valid_thru" >বৈধ থ্রু</string>
+    <string name="card_holder_name" >কার্ড হোল্ডারের নাম</string>
+    <string name="card_numbers" >কার্ড নম্বর</string>
+    <string name="exp_date" >শেষ দিন</string>
+    <string name="mm_yy" >MM/YY</string>
+    <string name="cvv_tet" >সিভিভি</string>
+    <string name="billing_address" >বিলিং ঠিকানা</string>
+    <string name="zip" >পিন</string>
+    <string name="add_company" >কোম্পানি যোগ করুন</string>
+    <!--  Book Keepers    <-->
+    <string name="search" >সন্ধান করুন...</string>
+    <string name="no_internal_auditor_found" >কোন অভ্যন্তরীণ হিসাবপরীক্ষক পাওয়া যায়নি</string>
+    <string name="ein_number" >EIN নম্বর</string>
+    <string name="balance" >ভারসাম্য : </string>
+    <string name="bal" >0.00</string>
+    <!--   Companies <-->
+    <string name="no_company_found" >কোন কোম্পানি পাওয়া যায়নি</string>
+    <string name="it_seems_no_company_to_display" >প্রদর্শনের জন্য কোন কোম্পানি নেই</string>
+    <!--  crop Image  <-->
+    <string name="retake" >পুনর্গ্রহণ করুন</string>
+    <string name="b_w" >B/W</string>
+    <string name="add_new" >নতুন যোগ করুন</string>
+    <string name="finish" >শেষ করুন</string>
+    <string name="cancel" >বাতিল করুন</string>
+    <string name="apply" >আবেদন করুন</string>
+    <string name="sort_by" >ক্রমানুসার</string>
+    <string name="filter" >ছাঁকনি</string>
+    <string name="remove" >অপসারণ</string>
+    <string name="total_amount" >সর্বমোট পরিমাণ : </string>
+    <string name="amounts" >AMOUNT</string>
+    <string name="total_receipts" >মোট রসিদ : </string>
+    <string name="count" >গণনা</string>
+    <!-- Login Screen    <-->
+    <string name="customer" >ক্রেতা</string>
+    <string name="choose_user_type" >ব্যবহারকারীর ধরন নির্বাচন করুন</string>
+    <string name="login" >প্রবেশ করুন</string>
+    <string name="don_have_an_account" >একটি অ্যাকাউন্ট নেই?</string>
+    <string name="join_us" > আমাদের সাথে যোগ দিন</string>
+    <string name="update_profile" >প্রফাইল আধুনিক করুন</string>
+    <!-- Payment Method     <-->
+    <string name="add_or_choose_cards" >যোগ করুন বা চয়ন করুন \n কার্ড</string>
+    <string name="credit_debit_card" >ক্রেডিট / ডেবিট কার্ড</string>
+    <string name="card_holder" >কার্ড হোল্ডার</string>
+    <string name="update" >আধুনিক করুন</string>
+    <string name="year" >বছর</string>
+    <string name="no_subscription_invoices_found" >কোনো সাবস্ক্রিপশন ইনভয়েস পাওয়া যায়নি</string>
+    <string name="it_seems_no_subscription_invoices_to_display" >প্রদর্শনের জন্য কোনো সাবস্ক্রিপশন ইনভয়েস নেই</string>
+    <!-- Pending Gallery   <-->
+    <string name="no_pending_receipts_found" >কোন বকেয়া রসিদ পাওয়া যায়নি</string>
+    <string name="it_seems_no_pending_receipts_to_display" >প্রদর্শনের জন্য কোনো বকেয়া রসিদ নেই</string>
+    <!--  Profile   <-->
+    <string name="personal_details" >ব্যক্তিগত বিবরণ</string>
+    <string name="names" >নাম</string>
+    <string name="e_g_enter_your_address" >আপনার ঠিকানা লিখুন</string>
+    <string name="email_address" >ইমেইল ঠিকানা</string>
+    <string name="e_g_enter_your_email_address" >আপনার ই-মেইল ঠিকানা</string>
+    <string name="phone_number" >ফোন নম্বর</string>
+    <string name="e_g_enter_your_phone_number" >আপনার ফোন নম্বর লিখুন</string>
+    <!--  Profit Loss   <-->
+    <string name="it_seems_no_PL_to_display" >প্রদর্শনের জন্য কোন লাভ এবং ক্ষতি বিবরণী পাওয়া জাছেনা না</string>
+    <string name="no_rejected_receipts_found" >কোন প্রত্যাখ্যাত রসিদ পাওয়া যায়নি</string>
+    <string name="it_seems_no_rejected_receipts_to_display" >প্রদর্শনের জন্য কোন প্রত্যাখ্যাত রসিদ পাওয়া জাছেনা না</string>
+    <string name="no_pl_found" >কোন লাভ এবং ক্ষতি বিবরণী পাওয়া জাছেনা না</string>
+    <!-- Splash Screen   <-->
+    <string name="version" >সংস্করণ 1.0</string>
+    <string name="copyright_2023_allrights_reserved" >কপিরাইট 2023 অলরাইট সংরক্ষিত</string>
+    <!-- Sub User Modify      <-->
+    <string name="montesino_translation" >মন্টেসিনো অনুবাদ</string>
+    <string name="enter_name" >Enter Name</string>
+    <string name="emails" >ইমেইল</string>
+    <string name="enter_email" >ইমেইল প্রদান করুন</string>
+    <string name="request_customer_service_to_change_email" >Request customer service to change email.</string>
+    <string name="modify_user" >ব্যবহারকারী পরিবর্তন করুন</string>
+    <!-- Sub Users    <-->
+    <string name="sub_users" >উপ ব্যবহারকারী</string>
+    <string name="no_users_found" >কোন ব্যবহারকারী নেই</string>
+    <string name="it_seems_no_users_to_display" >প্রদর্শনের জন্য কোন ব্যবহারকারী নেই</string>
+    <string name="add_user" >ব্যবহারকারী যোগ করুন</string>
+    <string name="enter_address_line_2" >ঠিকানা লাইন 2 লিখুন</string>
+    <string name="loading" >লোড হচ্ছে...</string>
+    <string name="your_address" >আপনার ঠিকানা</string>
+    <string name="update_amount" >আধুনিকীকরণ পরিমাণ</string>
+    <!--  Amount Sub User  <-->
+    <string name="select" >নির্বাচন করুন</string>
+    <string name="balances" >ভারসাম্য</string>
+    <string name="bal_200_50" >200.50</string>
+    <string name="add_amount" >পরিমাণ যোগ করুন</string>
+    <string name="enter_amount" >পরিমান লিখুন</string>
+    <string name="payment_method" >মূল্যপরিশোধ পদ্ধতি</string>
+    <!-- Change Password   <-->
+    <string name="change_password" >পাসওয়ার্ড পরিবর্তন করুন</string>
+    <string name="enter_current_password" >বর্তমান পাসওয়ার্ড লিখুন</string>
+    <string name="enter_new_password" >নতুন পাসওয়ার্ড লিখুন</string>
+    <string name="enter_confirm_password" >নিশ্চিত পাসওয়ার্ড দিন</string>
+    <!-- Dialog Company Spinner     <-->
+    <string name="select_company" >কোম্পানি নির্বাচন করুন</string>
+    <string name="type_and_search..." >টাইপ করুন এবং অনুসন্ধান করুন...</string>
+    <string name="select_currency" >মুদ্রা নির্বাচন করুন</string>
+    <!-- Dialog Searchable Spinner Date    <-->
+    <string name="how_do_you_want_dates_displayed_" >আপনি কিভাবে তারিখগুলি প্রদর্শন করতে চান?</string>
+    <!--  Dialog Searchable Spinner State  <-->
+    <string name="select_state" >রাজ্য নির্বাচন কর</string>
+    <!-- Dialog User Spinner    <-->
+    <string name="select_user_type" >ব্যবহারকারীর ধরন নির্বাচন করুন</string>
+    <!-- Filter Bottom Sheet     <-->
+    <string name="reset_filter" >ফিল্টার রিসেট করুন</string>
+    <string name="date_range" >তারিখের পরিসীমা</string>
+    <string name="status" >স্ট্যাটাস</string>
+    <string name="upload_by" >কারদারা আপলোড</string>
+    <string name="from_date" >তারিখ হইতে</string>
+    <string name="to_date" >এখন পর্যন্ত</string>
+    <string name="pending" >বকেয়া</string>
+    <string name="approve" >অনুমোদন করুন</string>
+    <string name="super_approve" >সুপার অনুমোদন</string>
+    <string name="reject" >প্রত্যাখ্যান করুন</string>
+    <!--  Forgot Pass   <-->
+    <string name="forgot_password" >পাসওয়ার্ড ভুলে গেছেন</string>
+    <string name="enter_your_email_address" >আপনার ইমেইল আইডি লিখুন</string>
+    <string name="enter_OTP" >ওটিপি লিখুন</string>
+    <string name="verify_OTP" >ওটিপি যাচাই করুন</string>
+    <string name="enter_new_passwords" >নতুন পাসওয়ার্ড লিখুন</string>
+    <string name="enter_confirm_passwords" >সুনিশ্চিত পাসওয়ার্ড দিন</string>F
+    <string name="update_password" >পাসওয়ার্ড আপডেট করুন</string>
+    <!--  Image Option  <-->
+    <string name="select_image" ></string>
+    <string name="take_photo" >ছবি তুলুন</string>
+    <string name="choose_from_gallery" >গ্যালারি থেকে চয়ন করুন</string>
+    <!-- Image Slider      <-->
+    <string name="receipt_of" >রসিদ </string>
+    <!--  Package Type   <-->
+    <string name="choose_package" >প্যাকেজ নির্বাচন করুন</string>
+    <string name="continues" >চালিয়ে যান</string>
+    <string name="SUBHAM_SAHA" >সুভম সাহা</string>
+    <string name="dates_cards" >08/2025</string>
+    <!--  Permission Company    <-->
+    <string name="modify_permission" >অনুমতি পরিবর্তন করুন</string>
+    <string name="save" >সংরক্ষণ</string>
+    <!--    <-->
+    <string name="select_year" >বছর নির্বাচন করুন</string>
+    <!--  Reject   <-->
+    <string name="are_you_sure_you_want_to_reject_the_file" >আপনি কি নিশ্চিত যে আপনি ফাইলটি প্রত্যাখ্যান করতে চান?</string>
+    <string name="submit" >জমা দিন</string>
+    <!-- Resubmit   <-->
+    <string name="resubmit_receipt" >রসিদ পুনরায় জমা দিন</string>
+    <string name="resubmit" >পুনরায় জমা দিন</string>
+    <!-- Sort Bottom Sheet   <-->
+    <string name="ascending_by_date" >তারিখ অনুসারে আরোহণ</string>
+    <string name="descending_by_date" >তারিখ অনুসারে অবতরণ</string>
+    <!-- State Suggestion  <-->
+    <string name="state_name" >রাজ্যের নাম</string>
+    <!--  Dashboard  <-->
+    <string name="upload_receipts" >আপলোড রসিদ</string>
+    <string name="approved_receipts" >অনুমোদিত রসিদ</string>
+    <string name="pending_receipts" >বকেয়া রসিদ</string>
+    <string name="rejected_receipts" >প্রত্যাখ্যাত রসিদ</string>
+    <string name="users" >ব্যবহারকারীদের</string>
+    <string name="internal_auditors" >অভ্যন্তরীণ হিসাবপরীক্ষক</string>
+    <string name="P_L" >লাভ এবং ক্ষতি</string>
+    <string name="invoices" >চালান</string>
+    <string name="company_infos" >প্রতিষ্ঠানের তথ্য</string>
+    <string name="payment_methods" >মূল্যপরিশোধ পদ্ধতি</string>
+    <string name="are_you_sure_you_want_to_exit" >আপনি প্রস্থান করতে চান</string>
+    <string name="no" >না</string>
+    <string name="yes" >হ্যাঁ</string>
+    <string name="you_sure_that_you_want_to_logout" >আপনি নিশ্চিত, আপনি লগআউট করতে চান?</string>
+    <string name="Subscribe" >সাবস্ক্রাইব</string>
+    <!--Clipboard Util-->
+    <string name="clipboard" >ক্লিপবোর্ডে URL কপি করা হয়েছে</string>
+    <string name="url_clipboard_unavailable" >ক্লিপবোর্ড উপলব্ধ নেই</string>
+    <string name="copied_text" >অনুলিপি করা</string>
+    <!--  Login  <-->
+    <string name="please_enter_email_address_user_name" >অনুগ্রহ করে ইমেল ঠিকানা / ব্যবহারকারীর নাম লিখুন</string>
+    <string name="please_enter_valid_email_address" >বৈধ ইমেইল ঠিকানা লিখুন</string>
+    <string name="try_after_few_times" >কিছু সময় পর চেষ্টা করুন</string>
+    <string name="please_enter_email_address" >ইমেল ঠিকানা লিখুন</string>
+    <string name="please_enter_password" >পাসওয়ার্ড লিখুন</string>
+    <string name="please_enter_OTP" >অনুগ্রহ করে ওটিপি লিখুন</string>
+    <string name="invalid_OTP" >অবৈধ OTP</string>
+    <string name="please_enter_new_password" >নতুন পাসওয়ার্ড লিখুন</string>
+    <string name="confirm_password_mismatch" >নিশ্চিত পাসওয়ার্ড অমিল </string>
+    <string name="password_changed_successfully" >পাসওয়ার্ড সফলভাবে পরিবর্তন</string>
+    <string name="OTP_verified_Successfully" >OTP সফলভাবে যাচাই করা হয়েছে</string>
+    <string name="enter_Your_User_Name" >আপনার ব্যবহারকারীর নাম লিখুন</string>
+    <!-- Account   <-->
+    <string name="please_enter_your_name" >আপনার নাম লিখুন</string>
+    <string name="please_enter_your_phone_number" >অনুগ্রহ করে আপনার ফোন নাম্বারটি প্রদান করুন</string>
+    <string name="please_enter_a_valid_phone_number" >একটি বৈধ ফোন নম্বর লিখুন দয়া করে</string>
+    <string name="please_enter_a_password" >একটি পাসওয়ার্ড লিখুন</string>
+    <string name="new_password_must_be_6_character_long" >নতুন পাসওয়ার্ড 6 অক্ষর দীর্ঘ হতে হবে</string>
+    <string name="please_reenter_the_password" >অনুগ্রহ করে পাসওয়ার্ডটি পুনরায় লিখুন</string>
+    <string name="ok" >ঠিক আছে</string>
+    <!--  Sub User Modify  <-->
+    <string name="please_enter_name" >নাম লিখুন দয়া করে</string>
+    <string name="please_select_any_one_permissions" >যে কোনো একটি অনুমতি নির্বাচন করুন</string>
+    <string name="sub_User_updated_successfully" >উপ-ব্যবহারকারী সফলভাবে আপডেট হয়েছে</string>
+    <string name="please_enter_your_current_password" >আপনার বর্তমান পাসওয়ার্ড লিখুন</string>
+    <string name="please_enter_the_new_password_again" >অনুগ্রহ করে আবার নতুন পাসওয়ার্ড দিন</string>
+    <string name="please_Check_Your_Internet_Connection" >আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন</string>
+    <string name="password_change_successfully" >পাসওয়ার্ড সফলভাবে পরিবর্তন</string>
+    <!--Add / Edit / Payment Validation-->
+    <string name="enter_company_name" >অনুগ্রহ করে কোম্পানির নাম লিখুন</string>
+    <string name="enter_company_gov" >অনুগ্রহ করে সরকারি আইডি লিখুন</string>
+    <string name="enter_company_date_format" >অনুগ্রহ করে তারিখ বিন্যাস নির্বাচন করুন</string>
+    <string name="enter_company_currency" >অনুগ্রহ করে মুদ্রা নির্বাচন করুন</string>
+    <string name="enter_company_address" >অনুগ্রহ করে আপনার ঠিকানা লিখুন</string>
+    <string name="enter_company_country" >অনুগ্রহ করে দেশ নির্বাচন করুন</string>
+    <string name="enter_company_select_state" >অনুগ্রহ করে রাজ্য নির্বাচন করুন</string>
+    <string name="enter_company_city" >অনুগ্রহ করে শহরের নাম লিখুন</string>
+    <string name="please_enter_state" >রাজ্য লিখুন</string>
+    <string name="enter_company_zip" >অনুগ্রহ করে পিন কোড লিখুন</string>
+    <string name="enter_company_card_holder" >অনুগ্রহ করে কার্ড ধারক নাম লিখুন</string>
+    <string name="enter_company_card_number" >অনুগ্রহ করে কার্ড নম্বর লিখুন</string>
+    <string name="enter_company_card_expiry" >অনুগ্রহ করে কার্ডের মেয়াদ শেষ হওয়ার তারিখ লিখুন</string>
+    <string name="enter_company_card_cvv" >অনুগ্রহ করে কার্ড সিভিভি নম্বর লিখুন</string>
+    <string name="enter_company_billing_address" >অনুগ্রহ করে বিলিং ঠিকানা লিখুন</string>
+    <!--   Add Company  <-->
+    <string name="wrong_month_input" >Wrong Month Input</string>
+    <string name="card_already_expired" >কার্ডের মেয়াদ আগেই শেষ</string>
+    <string name="please_fill_up_company_address" >কোম্পানির ঠিকানা পূরণ করুন</string>
+    <string name="company_updated_successfully" >কোম্পানি সফলভাবে আপডেট করা হয়েছে</string>
+    <string name="please_reenter_card_number" >কার্ড নম্বর আবার লিখুন</string>
+    <string name="not_allowed_No_Package_Id_Available" >অনুমোদিত নয় কোন প্যাকেজ আইডি উপলব্ধ নেই</string>
+    <string name="company_already_added" >কোম্পানি ইতিমধ্যে যোগ করা হয়েছে</string>
+    <string name="please_choose_a_package_before_continue" >চালিয়ে যাওয়ার আগে অনুগ্রহ করে একটি প্যাকেজ বেছে নিন</string>
+    <string name="please_enter_Memo_and_Amount" >দয়া করে মেমো এবং পরিমাণ লিখুন </string>
+    <string name="negative_amount_is_not_acceptable" >নেতিবাচক পরিমাণ গ্রহণযোগ্য নয়</string>
+    <string name="choose_at_least_one_image_to_remove" >অপসারণের জন্য অন্তত একটি ছবি বেছে নিন</string>
+    <string name="are_you_sure_you_want_to_remove_the_file" >আপনি কি নিশ্চিত যে আপনি ফাইলটি সরাতে চান৷</string>
+    <string name="choose_at_least_one_image_to_download" >ডাউনলোড করার জন্য অন্তত একটি ছবি বেছে নিন</string>
+    <string name="receipts_downloading_started" >রসিদ ডাউনলোড শুরু হয়...</string>
+    <string name="file_not_Uploaded_yet" >ফাইল এখনো আপলোড করা হয়নি</string>
+    <string name="downloading_file" >ফাইল(গুলি) ডাউনলোড হচ্ছে</string>
+    <string name="please_wait" >অনুগ্রহপূর্বক অপেক্ষা করুন...</string>
+    <string name="opps_Try_again_later" >অপ্স! পরে আবার চেষ্টা করুন</string>
+    <string name="try_again_later" >পরে আবার চেষ্টা করুন</string>
+    <string name="usd" >USD</string>
+    <string name="plus_USD" >plus USD</string>
+    <string name="plus" >plus</string>
+    <string name="receipt_App_ONLY" >Receipt App - ONLY</string>
+    <string name="note_Your_subscription_for_this_company_is" >দ্রষ্টব্য: এই কোম্পানির জন্য আপনার সাবস্ক্রিপশন হল </string>
+    <string name="it_is" >. এইটা </string>
+    <string name="per_months" >প্রতি মাসে,</string>
+    <string name="per_month_for_each_additional_sub_user" > প্রতিটি অতিরিক্ত উপ-ব্যবহারকারীর জন্য প্রতি মাসে।</string>
+    <string name="your_subscription_for_this_company_is_Receipt_App_ONLY_Please_upgrade_your_package_to_use" >এই কোম্পানির জন্য আপনার সাবস্ক্রিপশন হল রসিদ অ্যাপ - শুধুমাত্র। ব্যবহার করার জন্য আপনার প্যাকেজ আপগ্রেড করুন</string>
+    <string name="feature" >বৈশিষ্ট্য.</string>
+    <string name="alert" >সতর্কতা!</string>
+    <string name="your_payment_method_declined_please_edit_or_add_a_new_payment_method_to_continue" >আপনার অর্থপ্রদানের পদ্ধতি প্রত্যাখ্যান করা হয়েছে, অনুগ্রহ করে সম্পাদনা করুন বা চালিয়ে যেতে একটি নতুন অর্থপ্রদানের পদ্ধতি যোগ করুন.</string>
+    <string name="there_is_a_billing_issue_with_this_account_once_it_is_resolved_by_the_company_owner_access_will_be_granted" >এই অ্যাকাউন্টে একটি বিলিং সমস্যা আছে, এটি কোম্পানির মালিক দ্বারা সমাধান হয়ে গেলে অ্যাক্সেস মঞ্জুর করা হবে.</string>
+    <string name="Permission_of" >এর অনুমতি</string>
+    <string name="are_you_sure_you_want_to_remove_the_sub_user" >আপনি কি নিশ্চিত যে আপনি সাব ব্যবহারকারীকে সরাতে চান?</string>
+    <string name="please_enter_amount" >দয়া করে অর্থ লিখুন</string>
+    <string name="no_rejected_approved_found" >কোন অনুমোদিত রসিদ পাওয়া যায়নি</string>
+    <string name="it_seems_no_approved_receipts_to_display" >এটি প্রদর্শিত কোন অনুমোদিত রসিদ বলে মনে হচ্ছে</string>
+    <!--REIMBURSEMENT-->
+    <string name="need_reimbursement">NEEDS REIMBURSEMENT</string>
+    <!-- NETWORK MESSAGE-->
+    <string name="file_download_msg_for_speed">Receipt(s) will be downloaded automatically when there will be good Internet connection.</string>
+    <string name="file_upload_msg_for_speed">Receipt(s) will be uploaded automatically when there will be good Internet connection.</string>
+    <!--BACKGROUND SERVICE MESSAGE-->
+    <string name="pbk_running">Perfect Bookkeeping is running</string>
+    <string name="select_Preferred_Language">Select Preferred Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_already_selected">Language already selected!</string>
+    <string name="copy_url">কপি ইউআরএল</string>
+</resources>

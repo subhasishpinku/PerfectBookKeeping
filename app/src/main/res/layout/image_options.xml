@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/border"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_margin="@dimen/_7sdp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_image"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/blue"
+            android:id="@+id/changeMode"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_10sdp"/>
+
+        <View
+            android:layout_height="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:background="#D4D4D5"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/openCamera"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_camera"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/take_photo"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:padding="@dimen/_10sdp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_height="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:background="#D4D4D5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gallery"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_gallery"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_from_gallery"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:padding="@dimen/_10sdp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_height="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:background="#D4D4D5"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_modal_cancel"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:padding="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

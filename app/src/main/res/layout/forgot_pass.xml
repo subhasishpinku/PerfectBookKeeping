@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/border"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_margin="@dimen/_7sdp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:id="@+id/changeMode"
+            android:textSize="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <!--EMAIL SECTION-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/sectionEmail">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/email_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:hint="@string/enter_your_email_address"
+            android:id="@+id/forgotPassEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:id="@+id/next"
+                android:clickable="true"
+                android:background="@drawable/gradiant_button_background"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btnText"
+                    android:fontFamily="@font/poppins_bold"
+                    android:id="@+id/changeButtonName"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="Next"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--OTP SECTION-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/sectionOTP">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:text="@string/enter_OTP"
+                    android:fontFamily="@font/poppins_medium" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:id="@+id/timer_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/timer"
+                        android:layout_gravity="center"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="00.59"
+                        android:id="@+id/timer"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/resend_layout"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/gradiant_button_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Resend OTP"
+                        android:id="@+id/resend_otp"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                
+                
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="@string/enter_OTP"
+                android:id="@+id/otp"
+                android:textColor="@color/black"
+                android:maxLength="6"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/otp1"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:lineHeight="0dp"
+                    android:background="@drawable/otp_btn"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <EditText
+                    android:id="@+id/otp2"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:lineHeight="0dp"
+                    android:inputType="number"
+                    android:background="@drawable/otp_btn"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <EditText
+                    android:id="@+id/otp3"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:lineHeight="0dp"
+                    android:inputType="number"
+                    android:background="@drawable/otp_btn"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <EditText
+                    android:id="@+id/otp4"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:lineHeight="0dp"
+                    android:inputType="number"
+                    android:background="@drawable/otp_btn"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <EditText
+                    android:id="@+id/otp5"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:lineHeight="0dp"
+                    android:inputType="number"
+                    android:background="@drawable/otp_btn"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <EditText
+                    android:id="@+id/otp6"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:lineHeight="0dp"
+                    android:inputType="number"
+                    android:background="@drawable/otp_btn"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:id="@+id/verifyOTP"
+                android:clickable="true"
+                android:background="@drawable/gradiant_button_background"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btnText"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/verify_OTP"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Update Password SECTION-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/sectionPassword">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_new_passwords"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:hint="@string/password"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/eye_btn_fp"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="right"
+                    android:onClick="show_pass"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/show"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_confirm_passwords"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_8sdp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:hint="@string/re_password"
+                android:id="@+id/cnfPassword"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/eye_btn_cnf"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="right"
+                    android:onClick="show_pass"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/show"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:id="@+id/updatePass"
+                android:clickable="true"
+                android:background="@drawable/gradiant_button_background"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btnText"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="@string/update_password"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

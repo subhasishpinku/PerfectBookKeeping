@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/progressbar_layout">
+
+      <pl.droidsonroids.gif.GifImageView
+          android:layout_width="@dimen/_80sdp"
+          android:layout_height="@dimen/_80sdp"
+          android:layout_gravity="center"
+          android:visibility="gone"
+          android:foregroundGravity="center"
+          android:src="@drawable/loader" />
+
+      <com.aseem.versatileprogressbar.ProgBar
+          android:id="@+id/myProgressBar"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:elevation="10dp"
+          app:text=""
+          app:barType="@drawable/loader"/>
+
+</LinearLayout>

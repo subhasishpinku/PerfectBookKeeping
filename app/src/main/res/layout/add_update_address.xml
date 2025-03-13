@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/border"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_margin="@dimen/_7sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:layout_below="@+id/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Address"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:id="@+id/changeMode"
+            android:textSize="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/company_address_filed"
+        android:orientation="vertical">
+        <!--ADDRESS LINE 1-->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Address 1"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"/>
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="e.g. Enter your Address"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/addressOne"
+            android:textSize="14dp"/>
+        <!--ADDRESS LINE 1-->
+        <!--ADDRESS LINE 2-->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Address 2"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"/>
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="e.g. Enter your Address Line 2"
+            android:id="@+id/addressTwo"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+        <!--ADDRESS LINE 2-->
+        <!--COUNTRY STATE BLOCK-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Country Region"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Select a Country"
+                    android:focusable="false"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:completionThreshold="1"
+                    android:id="@+id/countrySelect"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/black"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="State"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Your State Name"
+                    android:id="@+id/state"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+                <EditText
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Select a State"
+                    android:focusable="false"
+                    android:completionThreshold="1"
+                    android:id="@+id/stateSelect"
+                    android:visibility="gone"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/black"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--COUNTRY STATE BLOCK-->
+        <!--CITY ZIP BLOCK-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="City"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="e.g. Enter your City"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:id="@+id/city"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Zip"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="e.g. 700098"
+                    android:inputType="number"
+                    android:id="@+id/zip"
+                    android:maxLength="6"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--CITY ZIP BLOCK-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_address_filed"
+        android:layout_margin="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/add_company_address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gradiant_button_background"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Add Address"
+            android:textColor="@color/btnText"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

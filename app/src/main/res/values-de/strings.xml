@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="app_name">Perfekte Buchhaltung</string>-->
+    <string name="email">E-Mail-Adresse eingeben</string>
+    <string name="title">Titel</string>
+    <string name="memo">Memo</string>
+    <string name="file_date">Dateidatum</string>
+    <string name="amount">Betrag</string>
+    <string name="email_add">E-Mail-Adresse eingeben</string>
+    <string name="name">Name eingeben</string>
+    <string name="password">Passwort eingeben</string>
+    <string name="phone">Telefonnummer eingeben</string>
+    <string name="oldPassword">Aktuelles Passwort eingeben</string>
+    <string name="re_password">Passwort erneut eingeben</string>
+    <string name="forgotPassword">Passwort vergessen?</string>
+    <string name="datePicker">JJJJ/MM/TT</string>
+    <string name="currency">USD</string>
+    <string name="date_format">MM/TT/JJJJ</string>
+
+    <!--MENU ITEMS-->
+    <string name="companyList">Firmen</string>
+    <string name="dashboard">Schaltpult</string>
+    <string name="gallery">Historien hochladen</string>
+    <string name="all_files">Alle Quittungen</string>
+    <string name="approve_files">Genehmigte Quittungen</string>
+    <string name="reject_files">Abgelehnte Quittungen</string>
+    <string name="pending_file">Ausstehende Quittungen</string>
+    <string name="reject_reason">Gründen ablehnen</string>
+
+    <string name="profileDetails">Profil-Details</string>
+    <string name="crop">Zuschneiden</string>
+    <string name="cards">Ihre Karten</string>
+    <string name="receipt">Rechnungen</string>
+    <string name="edtComp">Firmennfos</string>
+    <string name="paymentMethod">Zahlungsart</string>
+    <string name="addComp">Firma hinzufügen</string>
+    <string name="profile">Profil</string>
+    <string name="logOut">Ausloggen</string>
+    <string name="changePassword">Passwort ändern</string>
+
+    <!--Company Dashboard-->
+    <string name="uploadReceipt">Quittungen hochladen</string>
+    <string name="viewReceipt">Quittungen ansehen</string>
+    <string name="subUsers">Subnutzer</string>
+    <string name="settings">Einstellungen</string>
+    <string name="menu">Menü</string>
+    <string name="pnl">PNL-Erklärungen</string>
+    <string name="employee">Buchhalter</string>
+    <string name="checkLabel">BENÖTIGT RÜCKERSTATTUNG, NICHT MIT FIRMENGELDERN BEZAHLT.</string>
+    <string name="govLabel">Regierungs-ID für Subnutzer sichtbar machen</string>
+    <string name="sameAddress">Gleiche wie Firmenadresse</string>
+    <!--DRAWER-->
+    <string name="openDrawer">Schublade öffnen</string>
+    <string name="closeDrawer">Schublade schließen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Account Page   <-->
+    <string name="register_account">Konto registrieren</string>
+    <string name="already_have_an_account">Sie haben bereits ein Konto?</string>
+    <string name="log_in"> Einloggen</string>
+    <!-- Add Company   <-->
+    <string name="company_info">Firmeninfos</string>
+    <string name="company_name">Firmenname</string>
+    <string name="company_ein_number">EIN-Nummer der Firma</string>
+    <string name="company_gov_id">Regierung-ID der Firma</string>
+    <string name="watermark_date_format">Wasserzeichen Datumsformat</string>
+    <string name="select_date_format">Datumsformat auswählen</string>
+    <string name="operational_currency">Operative Währung</string>
+    <string name="choose_currency">Währung wählen</string>
+    <string name="company_address">Firmenadresse</string>
+    <string name="add_or_Choose_address">\n Adresse hinzufügen oder wählen</string>
+    <string name="address_1">Adresse 1</string>
+    <string name="address_line_1">Adresszeile 1</string>
+    <string name="address_2">Adresse 2</string>
+    <string name="address_line_2">Adresszeile 2</string>
+    <string name="country_region">Land Region</string>
+    <string name="country">Land</string>
+    <string name="state">Staat</string>
+    <string name="city">Stadt</string>
+    <string name="zip_code">Postleitzahl</string>
+    <string name="card_details">Karte Details</string>
+    <string name="add_or_Choose_cards">">\n Karten hinzufügen oder wählen</string>
+    <string name="cvv">000</string>
+    <string name="payWave">payWave</string>
+    <string name="card_number">XXXX XXXX XXXX 6025</string>
+    <string name="cars_holder">KARTEN INHABER</string>
+    <string name="valid_thru">GÜLTIG BIS</string>
+    <string name="card_holder_name">KARTENINHABER-NAME</string>
+    <string name="card_numbers">KARTENNUMMER</string>
+    <string name="exp_date">Ablaufdatum</string>
+    <string name="mm_yy">MM/JJ</string>
+    <string name="cvv_tet">CVV</string>
+    <string name="billing_address">Rechnungsadresse</string>
+    <string name="zip">Postleitzahl</string>
+    <string name="add_company">Firma hinzufügen</string>
+    <!--  Book Keepers    <-->
+    <string name="search">Suche...</string>
+    <string name="no_internal_auditor_found">Kein interner Prüfer gefunden</string>
+    <string name="ein_number">EIN-NUMMER</string>
+    <string name="balance">Saldo: </string>
+    <string name="bal">0.00</string>
+    <!--   Companies <-->
+    <string name="no_company_found">Keine Firma gefunden</string>
+    <string name="it_seems_no_company_to_display">Es scheint keine Firma zu sein, die</string>
+    <!--  crop Image  <-->
+    <string name="retake">Wiederholen</string>
+    <string name="b_w">S/W</string>
+    <string name="add_new">Neu hinzufügen</string>
+    <string name="finish">Beenden</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="apply">Anwenden</string>
+    <string name="sort_by">Sortieren nach</string>
+    <string name="filter">Filtern</string>
+    <string name="remove">Entfernen</string>
+    <string name="total_amount">Gesamtbetrag: </string>
+    <string name="amounts">BETRAG</string>
+    <string name="total_receipts">Gesamtquittungen: </string>
+    <string name="count">ZÄHLUNG</string>
+    <!-- Login Screen    <-->
+    <string name="customer">Kunde</string>
+    <string name="choose_user_type">Benutzertyp wählen</string>
+    <string name="login">EINLOGGEN</string>
+    <string name="don_have_an_account">Sie haben kein Konto?</string>
+    <string name="join_us"> Mitmachen</string>
+    <string name="update_profile">Profil aktualisieren</string>
+    <!-- Payment Method     <-->
+    <string name="add_or_choose_cards">\n Karten hinzufügen oder wählen</string>
+    <string name="credit_debit_card">Kredit-/Debitkarte</string>
+    <string name="card_holder">KARTENINHABER</string>
+    <string name="update">Aktualisieren</string>
+    <string name="year">Jahr</string>
+    <string name="no_subscription_invoices_found">Keine Abo-Rechnungen gefunden</string>
+    <string name="it_seems_no_subscription_invoices_to_display">Es scheinen keine Abo-Rechnungen angezeigt zu werden</string>
+    <!-- Pending Gallery   <-->
+    <string name="no_pending_receipts_found">Keine ausstehenden Quittungen gefunden</string>
+    <string name="it_seems_no_pending_receipts_to_display">Es scheinen keine ausstehenden Quittungen angezeigt zu werden</string>
+    <!--  Profile   <-->
+    <string name="personal_details">Persönliche Angaben</string>
+    <string name="names">Name</string>
+    <string name="e_g_enter_your_address">z.B. Adresse eingeben</string>
+    <string name="email_address">E-Mail Address</string>
+    <string name="e_g_enter_your_email_address">z.B. E-Mail Adresse eingeben</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="e_g_enter_your_phone_number">z.B. Telefonnummer eingeben</string>
+    <!--  Profit Loss   <-->
+    <string name="it_seems_no_PL_to_display">Es scheint kein G/V angezeigt zu werden</string>
+    <string name="no_rejected_receipts_found">Keine abgelehnten Quittungen gefunden</string>
+    <string name="it_seems_no_rejected_receipts_to_display">Es scheinen keine abgelehnten Quittungen angezeigt zu werden</string>
+    <string name="no_pl_found">Kein G/V gefunden</string>
+
+    <!-- Splash Screen   <-->
+    <string name="version">Angabe 1.0</string>
+    <string name="copyright_2023_allrights_reserved">Copyright 2023 Alle Rechte vorbehalten</string>
+    <!-- Sub User Modify      <-->
+    <string name="montesino_translation">Montesino Übersetzung</string>
+    <string name="enter_name">Name eingeben</string>
+    <string name="emails">E-Mail</string>
+    <string name="enter_email">E-Mail eingeben</string>
+    <string name="request_customer_service_to_change_email">Kundendienst anfordern, um E-Mail zu ändern.</string>
+    <string name="modify_user">Benutzer ändern</string>
+    <!-- Sub Users    <-->
+    <string name="sub_users">Subnutzer</string>
+    <string name="no_users_found">Keine Benutzer gefunden</string>
+    <string name="it_seems_no_users_to_display">Es scheint keine Benutzer zu zeigen</string>
+    <string name="add_user">Benutzer hinzufügen</string>
+    <string name="enter_address_line_2">Adresse Zeile 2 eingeben</string>
+    <string name="loading">Laden ...</string>
+    <string name="your_address">Ihre Adresse</string>
+    <string name="update_amount">Betrag aktualisieren</string>
+    <!--  Amount Sub User  <-->
+    <string name="select">Auswählen</string>
+    <string name="balances">Saldo</string>
+    <string name="bal_200_50">200.50</string>
+    <string name="add_amount">Betrag hinzufügen</string>
+    <string name="enter_amount">Betrag eingeben</string>
+    <string name="payment_method">Zahlungsart</string>
+    <!-- Change Password   <-->
+    <string name="change_password">Passwort ändern</string>
+    <string name="enter_current_password">Aktuelles Passwort eingeben</string>
+    <string name="enter_new_password">Neues Passwort eingeben</string>
+    <string name="enter_confirm_password">Passwortbestätigung eingeben</string>
+    <!-- Dialog Company Spinner     <-->
+    <string name="select_company">Firma auswählen</string>
+    <string name="type_and_search...">Gib ein und suche...</string>
+    <string name="select_currency">Währung auswählen</string>
+    <!-- Dialog Searchable Spinner Date    <-->
+    <string name="how_do_you_want_dates_displayed_">Wie sollen die Daten angezeigt werden?</string>
+    <!--  Dialog Searchable Spinner State  <-->
+    <string name="select_state">Staat auswählen</string>
+    <!-- Dialog User Spinner    <-->
+    <string name="select_user_type">Benutzertyp auswählen</string>
+    <!-- Filter Bottom Sheet     <-->
+    <string name="reset_filter">Filter zurücksetzen</string>
+    <string name="date_range">Datumsbereich</string>
+    <string name="status">Status</string>
+    <string name="upload_by">Hochladen durch</string>
+    <string name="from_date">Vom Datum</string>
+    <string name="to_date">Bis Datum</string>
+    <string name="pending">Ausstehend</string>
+    <string name="approve">Zum Genehmigen</string>
+    <string name="super_approve">Super Genehmigung</string>
+    <string name="reject">Ablehnen</string>
+    <!--  Forgot Pass   <-->
+    <string name="forgot_password">Passwort vergessen</string>
+    <string name="enter_your_email_address">E-Mail Adresse eingeben</string>
+    <string name="enter_OTP">OTP eingeben</string>
+    <string name="verify_OTP">OTP verifizieren</string>
+    <string name="enter_new_passwords">Neues Passwort eingeben</string>
+    <string name="enter_confirm_passwords">Passwortbestätigung eingeben</string>
+    <string name="update_password">Passwort aktualisieren</string>
+    <!--  Image Option  <-->
+    <string name="select_image"></string>
+    <string name="take_photo">Foto aufnehmen</string>
+    <string name="choose_from_gallery">Aus Galerie wählen</string>
+    <!-- Image Slider      <-->
+    <string name="receipt_of">Quittung von</string>
+    <!--  Package Type   <-->
+    <string name="choose_package">Paket wählen</string>
+    <string name="continues">Weiter</string>
+    <string name="SUBHAM_SAHA">SUBHAM SAHA</string>
+    <string name="dates_cards">08/2025</string>
+    <!--  Permission Company    <-->
+    <string name="modify_permission">Erlaubnis ändern</string>
+    <string name="save">Speichern</string>
+    <!--    <-->
+    <string name="select_year">Jahr auswählen</string>
+    <!--  Reject   <-->
+    <string name="are_you_sure_you_want_to_reject_the_file">Wollen Sie die Datei wirklich ablehnen?</string>
+    <string name="submit">Einreichen</string>
+    <!-- Resubmit   <-->
+    <string name="resubmit_receipt">Quittung erneut einreichen</string>
+    <string name="resubmit">Erneut einreichen</string>
+    <!-- Sort Bottom Sheet   <-->
+    <string name="ascending_by_date">Aufsteigend nach Datum</string>
+    <string name="descending_by_date">Absteigend nach Datum</string>
+    <!-- State Suggestion  <-->
+    <string name="state_name">Staatsname</string>
+    <!--  Dashboard  <-->
+    <string name="upload_receipts">Quittungen hochladen</string>
+    <string name="approved_receipts">Genehmigte Quittungen</string>
+    <string name="pending_receipts">Ausstehende Quittungen</string>
+    <string name="rejected_receipts">Abgelehnte Quittungen</string>
+    <string name="users">Benutzer</string>
+    <string name="internal_auditors">Interne Prüfer</string>
+    <string name="P_L">G/V</string>
+    <string name="invoices">Rechnungen</string>
+    <string name="company_infos">Firmeninfos</string>
+    <string name="payment_methods">Zahlungsart</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="you_sure_that_you_want_to_logout">You sure, that you want to logout?</string>
+    <string name="Subscribe">Subscribe</string>
+    <!--Clipboard Util-->
+    <string name="clipboard">URL copied to clipboard</string>
+    <string name="url_clipboard_unavailable">Clipboard not available</string>
+    <string name="copied_text">Copied Text</string>
+    <!--  Login  <-->
+    <string name="please_enter_email_address_user_name">Please enter email address / user name</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="try_after_few_times">Try after few times</string>
+    <string name="please_enter_email_address">Please enter email address</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_OTP">Please Enter Confirmation Code</string>
+    <string name="invalid_OTP">Invalid Confirmation Code</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="confirm_password_mismatch">Confirm password mismatch</string>
+    <string name="password_changed_successfully">Password changed successfully</string>
+    <string name="OTP_verified_Successfully">Confirmation Code verified Successfully</string>
+    <string name="enter_Your_User_Name">Enter Your User Name</string>
+    <!-- Account   <-->
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_enter_your_phone_number">Please enter your phone number</string>
+    <string name="please_enter_a_valid_phone_number">Please enter a valid phone number</string>
+    <string name="please_enter_a_password">Please enter a password</string>
+    <string name="new_password_must_be_6_character_long">New password must be 6 character long</string>
+    <string name="please_reenter_the_password">Please re-enter the password</string>
+    <string name="ok">OK</string>
+    <!--  Sub User Modify  <-->
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_select_any_one_permissions">Please select any one permissions</string>
+    <string name="sub_User_updated_successfully">Sub-User updated successfully</string>
+    <string name="please_enter_your_current_password">Please enter your current password</string>
+    <string name="please_enter_the_new_password_again">Please enter the new password again</string>
+    <string name="please_Check_Your_Internet_Connection">Please Check Your Internet Connection</string>
+    <string name="password_change_successfully">Password Change Successfully</string>
+
+
+    <!--Add / Edit / Payment Validation-->
+    <string name="enter_company_name">Please enter company name</string>
+    <string name="enter_company_gov">Please enter GOV ID</string>
+    <string name="enter_company_date_format">Please select date format</string>
+    <string name="enter_company_currency">Please select currency</string>
+    <string name="enter_company_address">Please enter your address</string>
+    <string name="enter_company_country">Please select country</string>
+    <string name="enter_company_select_state">Please select state</string>
+    <string name="enter_company_city">Please enter city</string>
+    <string name="enter_company_zip">Please enter zip</string>
+    <string name="please_enter_state">Please enter state</string>
+    <string name="enter_company_card_holder">Please enter card holder name</string>
+    <string name="enter_company_card_number">Please enter card number</string>
+    <string name="enter_company_card_expiry">Please enter expiry</string>
+    <string name="enter_company_card_cvv">Please enter cvv</string>
+    <string name="enter_company_billing_address">Please enter billing address</string>
+    <!--   Add Company  <-->
+    <string name="wrong_month_input">Wrong Month Input</string>
+    <string name="card_already_expired">Card Already Expired</string>
+    <string name="please_fill_up_company_address">Please fill up company address</string>
+    <string name="company_updated_successfully">Company updated successfully</string>
+    <string name="please_reenter_card_number">Please re-enter card number</string>
+    <string name="not_allowed_No_Package_Id_Available">Not Allowed No Package Id Available</string>
+    <string name="company_already_added">Company Already Added</string>
+    <string name="please_choose_a_package_before_continue">Please choose a package before continue</string>
+    <string name="please_enter_Memo_and_Amount">Please enter Memo and Amount </string>
+    <string name="negative_amount_is_not_acceptable">Negative amount is not acceptable</string>
+    <string name="choose_at_least_one_image_to_remove">Choose at least One image to remove</string>
+    <string name="are_you_sure_you_want_to_remove_the_file">Are you sure you want to remove the file</string>
+    <string name="choose_at_least_one_image_to_download">Choose at least one image to download</string>
+    <string name="receipts_downloading_started">Receipts downloading started...</string>
+    <string name="file_not_Uploaded_yet">File not Uploaded yet</string>
+    <string name="downloading_file">Downloading file(s)</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="opps_Try_again_later">Opps! Try again later</string>
+    <string name="try_again_later">Try again later</string>
+    <string name="usd">USD</string>
+    <string name="plus_USD">plus USD</string>
+    <string name="plus">plus</string>
+    <string name="receipt_App_ONLY">Receipt App - ONLY</string>
+    <string name="note_Your_subscription_for_this_company_is">Note : Your subscription for this company is </string>
+    <string name="it_is">. It is </string>
+    <string name="per_months">per month,</string>
+    <string name="per_month_for_each_additional_sub_user"> per month for each additional sub-user.</string>
+    <string name="your_subscription_for_this_company_is_Receipt_App_ONLY_Please_upgrade_your_package_to_use">Your subscription for this company is Receipt App - ONLY. Please upgrade your package to use</string>
+    <string name="feature">feature.</string>
+    <string name="alert">Alert!</string>
+    <string name="your_payment_method_declined_please_edit_or_add_a_new_payment_method_to_continue">Your payment method declined, please edit or add a new payment method to continue.</string>
+    <string name="there_is_a_billing_issue_with_this_account_once_it_is_resolved_by_the_company_owner_access_will_be_granted">There is a billing issue with this account, once it is resolved by the company owner access will be granted.</string>
+    <string name="Permission_of">Permission of</string>
+    <string name="are_you_sure_you_want_to_remove_the_sub_user">Are you sure you want to remove the sub user?</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <!--REIMBURSEMENT-->
+    <string name="need_reimbursement">NEEDS REIMBURSEMENT</string>
+    <!-- NETWORK MESSAGE-->
+    <string name="file_download_msg_for_speed">Receipt(s) will be downloaded automatically when there will be good Internet connection.</string>
+    <string name="file_upload_msg_for_speed">Receipt(s) will be uploaded automatically when there will be good Internet connection.</string>
+    <!--BACKGROUND SERVICE MESSAGE-->
+    <string name="pbk_running">Perfect Bookkeeping is running</string>
+    <string name="select_Preferred_Language">Select Preferred Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_already_selected">Language already selected!</string>
+    <string name="copy_url">Copy URL</string>
+
+    <string name="no_rejected_approved_found">No Approved Receipts Found</string>
+    <string name="it_seems_no_approved_receipts_to_display">It Seems No Approved Receipts To Display</string>
+</resources>

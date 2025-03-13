@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/companyList"
+        android:title="@string/companyList"/>
+
+    <item
+        android:id="@+id/profileDtl"
+        android:title="@string/profileDetails"/>
+    
+    <item
+        android:id="@+id/subUsers"
+        android:title="@string/subUsers"
+        android:visible="false"/>
+
+
+    <item
+        android:id="@+id/employee"
+        android:title="@string/employee"
+        android:visible="false"/>
+
+
+    <item
+        android:id="@+id/receipt"
+        android:title="@string/receipt"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/changePassword"
+        android:title="@string/changePassword"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logOut"/>
+
+
+</menu>
